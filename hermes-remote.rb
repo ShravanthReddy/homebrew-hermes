@@ -5,12 +5,12 @@
 class HermesRemote < Formula
   desc "Pair the Hermes iPhone app with the Mac that runs Hermes"
   homepage "https://github.com/ShravanthReddy/hermes-remote"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/ShravanthReddy/hermes-remote/releases/download/v0.3.0/hermes-remote_0.3.0_darwin_universal.tar.gz"
-    sha256 "e57341df2d4352549bfdcb039cdeee4bcefed5758b799281721fe70a1fe6ec61"
+    url "https://github.com/ShravanthReddy/hermes-remote/releases/download/v0.4.0/hermes-remote_0.4.0_darwin_universal.tar.gz"
+    sha256 "e30111c9de1cc2c6f85fef1f231c52c26fc5a1a55a6744f07f4bb044ab8961de"
 
     define_method(:install) do
       bin.install "hermes-remote"
@@ -19,15 +19,15 @@ class HermesRemote < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ShravanthReddy/hermes-remote/releases/download/v0.3.0/hermes-remote_0.3.0_linux_amd64.tar.gz"
-      sha256 "850b32b657fcec3370dc3d06c103a932381fa656fb983dd5bcb25a86e9b52e68"
+      url "https://github.com/ShravanthReddy/hermes-remote/releases/download/v0.4.0/hermes-remote_0.4.0_linux_amd64.tar.gz"
+      sha256 "8d302752013ab1684c811cc1f4f2e3b65e45f366748ac7c780dde5284d1f613f"
       define_method(:install) do
         bin.install "hermes-remote"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ShravanthReddy/hermes-remote/releases/download/v0.3.0/hermes-remote_0.3.0_linux_arm64.tar.gz"
-      sha256 "1d706354e6a53bda9bae602fcef3e081acf32c28e2932e00c6f730e6742f1bc4"
+      url "https://github.com/ShravanthReddy/hermes-remote/releases/download/v0.4.0/hermes-remote_0.4.0_linux_arm64.tar.gz"
+      sha256 "564b648b5b15dd492ab7f58ac04c7ea2be400a96f5c6c70d77d413a553b0fcca"
       define_method(:install) do
         bin.install "hermes-remote"
       end
